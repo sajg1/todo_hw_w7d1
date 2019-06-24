@@ -13,7 +13,15 @@
           <span v-if="item.highPriority">High Priority!</span>
         </li>
       </ul>
+      <label for="activity">Activity:</label>
       <input type="text" v-model="newItem">
+      <br>
+      <label for="priority">Priority Level: </label>
+      <label for="high">High</label>
+      <input type="radio" id="high" name="priority" value="high">
+      <label for="low">Low</label>
+      <input type="radio" id="low" name="priority" value="low">
+      <br>
       <button v-on:click="saveNewItem">Save this Activity</button>
     </div>
   </body>
