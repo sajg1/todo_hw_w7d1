@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: "#app",
     data: {
-      items: ["Buy food", "Do dishes", "Have a shower"],
+      items: [
+        {activity: "Structure files in todo_hw", highPriority: true},
+        {activity: "Complete MVP", highPriority: true},
+        {activity: "Try extensions", highPriority: false}
+       ],
       newItem: ""
     },
     methods: {
