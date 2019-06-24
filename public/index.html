@@ -10,6 +10,8 @@
       <ul>
         <li v-for="item in items">{{item}}</li>
       </ul>
+      <input type="text" v-model="newItem">
+      <button v-on:click="saveNewItem">Save this Activity</button>
     </div>
   </body>
 </html>
